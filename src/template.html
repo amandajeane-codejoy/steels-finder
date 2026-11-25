@@ -1,0 +1,457 @@
+<title>PA STEELS Standards Finder</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a three-strand Know/Do/Think legend that doubles as the filter panel, a sticky search bar, then a single reading column of standards (or a wide strand-by-grade grid in Progression view) */
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --ink:#1b2130; --muted:#5d6577; --line:#dde1e8;
+  --know:#1f63c6; --know-soft:#e3edfb;
+  --do:#1f8a4c;   --do-soft:#e0f2e7;
+  --think:#7a3fc2; --think-soft:#efe6fa;
+  --accent:#1b2130; --accent-ink:#ffffff; --mark:#ffe58a;
+  --font-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --font-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11141b; --surface:#191d27; --ink:#e6e9f0; --muted:#9aa2b3; --line:#2b3140;
+  --know:#7fb0ff; --know-soft:#1c2a44; --do:#6fd39a; --do-soft:#173326; --think:#c4a1f5; --think-soft:#2b2140;
+  --accent:#e6e9f0; --accent-ink:#11141b; --mark:#6b5a12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11141b; --surface:#191d27; --ink:#e6e9f0; --muted:#9aa2b3; --line:#2b3140;
+  --know:#7fb0ff; --know-soft:#1c2a44; --do:#6fd39a; --do-soft:#173326; --think:#c4a1f5; --think-soft:#2b2140;
+  --accent:#e6e9f0; --accent-ink:#11141b; --mark:#6b5a12; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+.wrap{max-width:1120px;margin:0 auto}
+header.top{padding-block:28px 14px;display:flex;flex-direction:column;gap:6px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,42px);line-height:1.08;margin:0;text-wrap:balance}
+.lede{color:var(--muted);max-width:68ch;margin:0}
+.credit{margin:2px 0 0;font-size:13px;color:var(--muted)}
+.credit strong{color:var(--ink)}
+.credit a{color:var(--know)}
+
+/* Know / Do / Think legend + filters */
+.dims{display:grid;grid-template-columns:1fr 1.2fr 1.4fr;gap:12px;margin:10px 0 4px}
+.dim{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.dim h2{margin:0;font-family:var(--font-display);font-size:22px;line-height:1;color:var(--c);display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.dim h2 small{font-family:var(--font-body);font-size:13px;font-weight:400;color:var(--muted)}
+.dim .q{margin:0;font-size:14px;color:var(--ink)}
+.dim .sub{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:13px;line-height:1.25;font-weight:700;padding:5px 10px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-align:left}
+.chip:hover{border-color:var(--c,var(--muted))}
+.chip[aria-pressed="true"]{border-color:var(--c);background:var(--c);color:var(--surface)}
+.chip .n{font-family:var(--font-mono);font-weight:500;font-size:11px;opacity:.7;margin-left:4px}
+.dim.know{--c:var(--know)} .dim.do{--c:var(--do)} .dim.think{--c:var(--think)}
+
+.console{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.searchrow{display:flex;gap:8px;flex-wrap:wrap}
+#q{flex:1 1 260px;min-width:0;font:inherit;font-size:17px;padding:11px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+#q:focus{outline:none;border-color:var(--know);box-shadow:0 0 0 3px color-mix(in srgb,var(--know) 22%,transparent)}
+.seg{display:inline-flex;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-weight:700;font-size:14px;border:0;background:transparent;color:var(--muted);padding:10px 14px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.row2{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
+.grades{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flabel{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.grades .chip{--c:var(--accent)}
+.grades .chip[aria-pressed="true"]{color:var(--accent-ink)}
+.status{font-size:14px;color:var(--muted);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.status button{font:inherit;font-size:14px;color:var(--ink);background:none;border:0;cursor:pointer;text-decoration:underline;padding:0}
+.active{display:flex;flex-wrap:wrap;gap:6px}
+.active .chip{font-size:12px;padding:3px 9px}
+.chip:focus-visible,.seg button:focus-visible,.copy:focus-visible,a:focus-visible,.tag:focus-visible{outline:2px solid var(--know);outline-offset:2px}
+
+main{padding-top:18px}
+.disc{margin-bottom:30px}
+.disc>h2{font-family:var(--font-display);font-size:24px;margin:0 0 2px;display:flex;gap:10px;align-items:baseline}
+.disc>h2 .num{font-family:var(--font-mono);font-size:15px;color:var(--muted)}
+.strand{margin:16px 0 4px;font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--know);display:flex;align-items:center;gap:8px;border-bottom:2px solid var(--know-soft);padding-bottom:4px}
+.strand::before{content:"Know";font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:var(--know-soft);color:var(--know);padding:2px 6px;border-radius:4px}
+.std{display:grid;grid-template-columns:140px 1fr auto;gap:6px 16px;padding:14px 0;border-bottom:1px dashed var(--line);align-items:start}
+.std:target{background:color-mix(in srgb,var(--mark) 40%,transparent);border-radius:8px}
+.code{font-family:var(--font-mono);font-weight:600;font-size:14px;color:var(--ink);padding-top:2px;font-variant-numeric:tabular-nums}
+.grade{display:block;font-family:var(--font-body);font-weight:400;font-size:12px;color:var(--muted)}
+.body{min-width:0;display:flex;flex-direction:column;gap:8px}
+.pe{margin:0}
+.dims3{display:flex;flex-direction:column;gap:5px}
+.drow{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.dlab{flex:0 0 46px;font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--c);padding-top:4px}
+.drow .tags{display:flex;flex-wrap:wrap;gap:5px;flex:1 1 0;min-width:0}
+.tag{font:inherit;font-size:12.5px;line-height:1.3;padding:3px 9px;border-radius:6px;border:0;background:var(--soft);color:var(--c);cursor:pointer;text-align:left}
+.tag:hover{outline:1.5px solid var(--c)}
+.tag.on{background:var(--c);color:var(--surface)}
+.drow.know{--c:var(--know);--soft:var(--know-soft)} .drow.do{--c:var(--do);--soft:var(--do-soft)} .drow.think{--c:var(--think);--soft:var(--think-soft)}
+.none{font-size:12.5px;color:var(--muted);font-style:italic;padding-top:3px}
+.ets{display:inline-block;font-family:var(--font-mono);font-size:11px;font-weight:600;padding:1px 6px;border-radius:4px;border:1px solid var(--muted);color:var(--muted);margin-right:6px;vertical-align:1px}
+.copy{font:inherit;font-size:12px;font-weight:700;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 8px;cursor:pointer;white-space:nowrap}
+.copy.done{color:var(--do);border-color:var(--do)}
+.acts{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+a.copy{text-decoration:none;text-align:center}
+a.copy.pdf:hover,.copy:hover{color:var(--ink);border-color:var(--muted)}
+/* glossary */
+.gl-intro{color:var(--muted);max-width:70ch;margin:0 0 6px}
+.gl-group{margin:22px 0 6px}
+.gl-group h2{font-family:var(--font-display);font-size:22px;margin:0 0 2px;display:flex;align-items:center;gap:10px}
+.gl-group h2 .pill{font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:4px;background:var(--soft,var(--line));color:var(--c,var(--ink))}
+.gl-group.know{--c:var(--know);--soft:var(--know-soft)} .gl-group.do{--c:var(--do);--soft:var(--do-soft)} .gl-group.think{--c:var(--think);--soft:var(--think-soft)}
+.gl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.term{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c,var(--line));border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.term:target{outline:2px solid var(--mark)}
+.term h3{margin:0;font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.2;color:var(--ink)}
+.term h3 .abbr{font-family:var(--font-mono);font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
+.term p{margin:0;font-size:14.5px}
+.term .vs{font-size:13.5px;color:var(--muted)}
+.term .vs b{color:var(--ink)}
+.term .go{align-self:flex-start;font:inherit;font-size:12.5px;font-weight:700;color:var(--c,var(--ink));background:var(--soft,var(--bg));border:0;border-radius:6px;padding:4px 9px;cursor:pointer}
+.term .go:hover{outline:1.5px solid var(--c)}
+.dlab a{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor}
+mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
+.empty{padding:40px 0;color:var(--muted);text-align:center}
+
+.prog-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0 18px}
+table.prog{border-collapse:collapse;width:100%;min-width:960px;font-size:13.5px}
+.prog th,.prog td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}
+.prog thead th{font-family:var(--font-mono);font-size:12px;color:var(--muted);background:var(--bg)}
+.prog th.sn{width:150px;font-family:var(--font-display);font-weight:500;font-size:14px;color:var(--know)}
+.prog .cell-std{margin-bottom:10px;display:flex;flex-direction:column;gap:3px}
+.prog .cell-std:last-child{margin-bottom:0}
+.prog .cell-std .code{font-size:12px;padding:0}
+.prog .mini{display:flex;flex-wrap:wrap;gap:3px}
+.prog .mini span{font-size:11px;padding:1px 6px;border-radius:4px}
+.prog .mini .d{background:var(--do-soft);color:var(--do)} .prog .mini .t{background:var(--think-soft);color:var(--think)}
+.prog td.blank{background:repeating-linear-gradient(135deg,transparent 0 6px,color-mix(in srgb,var(--line) 45%,transparent) 6px 7px)}
+
+.about{margin-top:18px;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:14px;max-width:74ch;display:flex;flex-direction:column;gap:8px}
+.about h2{font-family:var(--font-display);font-size:18px;color:var(--ink);margin:6px 0 0}
+.about p{margin:0}
+.about a{color:var(--know)}
+.pemap{margin:4px 0;max-width:640px;background:#ffffff;border:1px solid var(--line);border-radius:12px;padding:8px}
+.pemap img{display:block;width:100%;height:auto}
+.pemap figcaption{font-size:12.5px;color:#5d6577;padding:4px 6px 2px}
+.site-foot{margin-top:40px;border-top:3px solid var(--ink);padding-top:22px;display:flex;flex-direction:column;gap:18px;font-size:14px;color:var(--muted)}
+.foot-badge{align-self:flex-start;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border:1.5px solid var(--ink);border-radius:4px;padding:3px 8px}
+.foot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.foot-col{min-width:0;display:flex;flex-direction:column;gap:8px}
+.foot-col h2{font-family:var(--font-display);font-size:18px;color:var(--ink);margin:0}
+.foot-col p{margin:0}
+.foot-col strong{color:var(--ink)}
+.site-foot a{color:var(--know)}
+.srcs{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.foot-notes{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:6px;font-size:13px}
+.foot-notes p{margin:0;max-width:90ch}
+.foot-notes .email{font-family:var(--font-mono);font-size:13px;user-select:all}
+.foot-notes .copy{margin-left:4px;vertical-align:1px}
+@media (max-width:860px){.foot-grid{grid-template-columns:1fr}}
+.key{font-family:var(--font-mono);font-size:13px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 10px;color:var(--ink)}
+@media (max-width:860px){.dims{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .std{grid-template-columns:1fr auto}
+  .std .acts{grid-column:2/3;grid-row:1}
+  .std .body{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:no-preference){.chip,.seg button,.copy,.tag{transition:background .15s,border-color .15s,color .15s}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">Pennsylvania · Adopted May 2023 · K–12</div>
+    <h1>PA STEELS Standards Finder</h1>
+    <p class="lede">All 370 Science, Technology &amp; Engineering, and Environmental Literacy &amp; Sustainability standards in one place. Every standard is broken into its three dimensions. Tap any Know, Do, or Think tag to find every standard that shares it.</p>
+    <p class="credit">Standards written and adopted by the <strong>Pennsylvania Department of Education</strong>. Independent finder by Amanda Jeane Strode. <a href="#about">About and sources</a></p>
+  </header>
+
+  <section class="dims" aria-label="Filter by dimension">
+    <div class="dim know">
+      <h2>Know <small>Core Ideas</small></h2>
+      <p class="q">What should students know?</p>
+      <div class="sub">Discipline</div>
+      <div class="chips" id="f-know"></div>
+    </div>
+    <div class="dim do">
+      <h2>Do <small>Science &amp; Engineering Practices</small></h2>
+      <p class="q">What are students doing?</p>
+      <div class="chips" id="f-do"></div>
+    </div>
+    <div class="dim think">
+      <h2>Think <small>Crosscutting Concepts · T&amp;E Practices</small></h2>
+      <p class="q">How are students thinking?</p>
+      <div class="sub">Crosscutting Concepts (Science + ELS)</div>
+      <div class="chips" id="f-ccc"></div>
+      <div class="sub">Technology &amp; Engineering Practices (T&amp;E)</div>
+      <div class="chips" id="f-tep"></div>
+    </div>
+  </section>
+
+  <div class="console">
+    <div class="searchrow">
+      <input id="q" type="search" placeholder="Search: watershed, model, 3.2.4, design solution…" aria-label="Search standards" autocomplete="off">
+      <div class="seg" role="group" aria-label="View">
+        <button id="v-list" aria-pressed="true">List</button>
+        <button id="v-prog" aria-pressed="false">Progression</button>
+        <button id="v-gloss" aria-pressed="false">Glossary</button>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="grades" id="f-grade"><span class="flabel">Grade</span></div>
+      <div class="grades"><button class="chip" id="f-ets" aria-pressed="false">ETS only</button></div>
+    </div>
+    <div class="status"><span id="count" aria-live="polite"></span><div class="active" id="active"></div><button id="reset" type="button" hidden>Clear all</button></div>
+  </div>
+
+  <section class="about reading" id="reading" hidden>
+    <h2>Reading a standard</h2>
+    <p>STEELS standards are three-dimensional. Each performance expectation weaves together what students <strong style="color:var(--know)">know</strong> (the core idea, organized here by strand), what they <strong style="color:var(--do)">do</strong> (the Science and Engineering Practices), and how they <strong style="color:var(--think)">think</strong> (Crosscutting Concepts for Science and ELS, or Technology and Engineering Practices for T&amp;E).</p>
+    <figure class="pemap"><img src="data:image/jpeg;base64,__PEMAP__" alt="Diagram of a performance expectation at the center of three rings: Practices (what students are doing), Core Ideas (what students should know), and Crosscutting Concepts (how students are thinking), surrounded by PA Connections and Content Connections."><figcaption>Every performance expectation combines practices, core ideas, and crosscutting concepts, framed by Pennsylvania and content connections.</figcaption></figure>
+    <div class="key">3 . 1 . 6-8 . A &nbsp;→&nbsp; STEELS · Life Science · Grades 6–8 · Standard A</div>
+    <p>Disciplines: 3.1 Life Science, 3.2 Physical Science, 3.3 Earth &amp; Space Science, 3.4 Environmental Literacy &amp; Sustainability, 3.5 Technology &amp; Engineering. Science standards are grade-specific for K–5 and banded for 6–8 and 9–12. ELS and T&amp;E standards are banded K–2, 3–5, 6–8, and 9–12. Choosing a single grade also shows the band that contains it.</p>
+    <p><strong>ETS</strong> marks the Engineering, Technology, and Applications of Science standards. They sit inside Technology &amp; Engineering, but PDE notes they apply across all STEELS content areas.</p>
+    <p>Link to any standard by adding its code after a # in this page's address, for example <span class="key" style="padding:1px 6px">#3.4.6-8.C</span>. Add <span class="key" style="padding:1px 6px">#glossary</span> to open the glossary.</p>
+    <p>The <strong>PDF</strong> button on each standard opens its official Foundation Box from PDE's Standards Aligned System.</p>
+  </section>
+
+  <main id="out"></main>
+
+
+  <footer class="site-foot" id="about">
+    <div class="foot-badge">Not an official PDE publication</div>
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h2>About this page</h2>
+        <p><strong>The standards belong to Pennsylvania.</strong> Every standard on this page was written and adopted by the Pennsylvania Department of Education (PDE) and the State Board of Education. Their wording is reproduced here unchanged, so teachers can search, filter, and compare them in one place.</p>
+        <p><strong>The finder was built by Amanda Jeane Strode</strong>, a Pennsylvania educator, as a free and independent reference tool. It reorganizes PDE's published documents. It does not add to or change the standards.</p>
+        <p>Always check the <a href="https://www.pdesas.org/Page/Viewer/ViewPage/58" target="_blank" rel="noopener">SAS STEELS page</a> for the current official version.</p>
+      </div>
+      <div class="foot-col">
+        <h2>How it was made</h2>
+        <p>Standard text, strands, and codes were transcribed from PDE's <em>K-12 STEELS Standards</em> document. Know, Do, and Think tags were taken from PDE's grade-level Science Curriculum Frameworks and from the Foundation Box for each ELS and T&amp;E standard, then checked against the original documents. Each PDF button links to PDE's own Foundation Box file.</p>
+        <p>The page was built with the help of Claude, an AI assistant, which extracted and organized the source documents under Amanda Jeane's direction. The glossary definitions were written for this resource, based on PDE's documents, since PDE does not publish a STEELS glossary.</p>
+      </div>
+      <div class="foot-col">
+        <h2>Sources</h2>
+        <ul class="srcs">
+          <li>Pennsylvania Department of Education. <em>Science, Technology &amp; Engineering, and Environmental Literacy &amp; Sustainability (STEELS) K-12 Standards.</em> May 2023.</li>
+          <li>PDE. <em>STEELS Foundation Boxes</em>, one per standard. Linked from each PDF button.</li>
+          <li>PDE. <em>Science Curriculum Frameworks</em>, Grades K–5, Middle School, and High School, and <em>Technology &amp; Engineering Curriculum Framework K-12</em>.</li>
+          <li>PDE. <em>Science</em> and <em>Technology &amp; Engineering Long Term Transfer Goals</em>.</li>
+          <li>All available on the <a href="https://www.pdesas.org/Page/Viewer/ViewPage/58" target="_blank" rel="noopener">Standards Aligned System (SAS) STEELS page</a>.</li>
+          <li>Performance expectation diagram with Know, Do, and Think annotations: <em>Tech in the Wild: STEELS with BBC micro:bit</em>, PETE&amp;C 2025, presented by Stacie Isenberg, Kelsey Derringer, and Amanda Jeane Strode.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-notes">
+      <p><strong>Notes on the source document.</strong> Its 6–8 ETS summary page labels two ETS standards 3.5.6-8.N and 3.5.6-8.O, while its strand tables and PDE's Foundation Boxes list them as 3.5.6-8.M and 3.5.6-8.N. This page follows the strand tables. Three codes printed with typos in the source (3.5.6-8.CC, 3.5.6-8.LL, 3.5.9-12.PP) are shown corrected. A few standards list a Connection to Nature of Science or to Engineering instead of a crosscutting concept; those show "none listed" under Think.</p>
+      <p>Found an error? Please email Amanda Jeane at <a class="email" href="mailto:amandajeane@codejoy.org?subject=PA%20STEELS%20Standards%20Finder">amandajeane@codejoy.org</a> <button class="copy" id="copy-email" type="button">Copy address</button> so it can be fixed. Last updated October 2026.</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+const RAW = `__RAW__`;
+const TAGS = `__TAGS__`;
+const PDFRAW = `__PDF__`;
+__GLOSS__
+const PDF={}; PDFRAW.trim().split("\n").forEach(l=>{const [c,h]=l.split("|"); PDF[c]=h;});
+
+const DISC={"1":"Life Science","2":"Physical Science","3":"Earth & Space Science","4":"Environmental Literacy & Sustainability","5":"Technology & Engineering"};
+const SEP={AQ:"Asking Questions & Defining Problems",MOD:"Developing & Using Models",INV:"Planning & Carrying Out Investigations",DATA:"Analyzing & Interpreting Data",MATH:"Using Math & Computational Thinking",CEDS:"Constructing Explanations & Designing Solutions",ARG:"Engaging in Argument from Evidence",INFO:"Obtaining, Evaluating & Communicating Information"};
+const CCC={PAT:"Patterns",CE:"Cause & Effect",SF:"Structure & Function",SYS:"Systems & System Models",SC:"Stability & Change",SPQ:"Scale, Proportion & Quantity",EM:"Energy & Matter"};
+const TEP={ST:"Systems Thinking",CR:"Creativity",MD:"Making & Doing",CT:"Critical Thinking",OP:"Optimism",CO:"Collaboration",CM:"Communication",ET:"Attention to Ethics"};
+const SCI_COLS=["K","1","2","3","4","5","6-8","9-12"], BAND_COLS=["K-2","3-5","6-8","9-12"], GRADES=["K","1","2","3","4","5","6-8","9-12"];
+const GLABEL=g=>g==="K"?"Kindergarten":(g.includes("-")?"Grades "+g.replace("-","–"):"Grade "+g);
+const GORDER={"K":0,"K-2":0.5,"1":1,"2":2,"3":3,"3-5":3.5,"4":4,"5":5,"6-8":6,"9-12":9};
+const lkey=l=>l.length*100+l.charCodeAt(0);
+
+const T={}; TAGS.trim().split("\n").forEach(l=>{const [c,d,t]=l.split("|"); T[c]={do:d?d.split(","):[],think:t?t.split(","):[]};});
+const STDS=[],STRANDS=[]; let cur=null;
+RAW.trim().split("\n").forEach(line=>{
+  if(line.startsWith("## ")){cur=line.slice(3);return;}
+  const i=line.indexOf("|"),code=line.slice(0,i); let text=line.slice(i+1);
+  const m=code.match(/^3\.(\d)\.([^.]+)\.(.+)$/); const ets=text.startsWith("*"); if(ets) text=text.slice(1);
+  const d=m[1], sk=d+"|"+cur; if(!STRANDS.find(s=>s.key===sk)) STRANDS.push({key:sk,disc:d,name:cur});
+  const tg=T[code]||{do:[],think:[]};
+  const names=[...tg.do.map(k=>SEP[k]),...tg.think.map(k=>CCC[k]||TEP[k])].join(" ");
+  STDS.push({code,disc:d,grade:m[2],letter:m[3],strand:cur,sk,text,ets,do:tg.do,think:tg.think,
+    hay:(code+" "+text+" "+cur+" "+DISC[d]+" "+names+(ets?" ets engineering technology applications of science":"")).toLowerCase()});
+});
+
+const state={q:"",discs:new Set(),strand:null,do:new Set(),think:new Set(),grade:null,ets:false,view:"list"};
+try{const v=localStorage.getItem("steels-view"); if(v==="prog"||v==="list") state.view=v;}catch(e){}
+let lastStdView=state.view;
+
+function gradeMatch(sg,sel){ if(!sel||sg===sel) return true; if(sg==="K-2") return ["K","1","2"].includes(sel); if(sg==="3-5") return ["3","4","5"].includes(sel); return false; }
+const terms=()=>state.q.toLowerCase().split(/\s+/).filter(Boolean);
+function passes(s,skip){
+  const t=terms();
+  return (skip==="disc"||state.discs.size===0||state.discs.has(s.disc))
+    &&(skip==="strand"||!state.strand||s.sk===state.strand)
+    &&(skip==="do"||state.do.size===0||s.do.some(k=>state.do.has(k)))
+    &&(skip==="think"||state.think.size===0||s.think.some(k=>state.think.has(k)))
+    &&gradeMatch(s.grade,state.grade)&&(!state.ets||s.ets)&&t.every(w=>s.hay.includes(w));
+}
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function hl(s){
+  let out=esc(s); const t=terms().filter(w=>w.length>1); if(!t.length) return out;
+  const re=new RegExp("("+t.map(w=>esc(w).replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).join("|")+")","gi");
+  return out.replace(/(<[^>]*>)|([^<]+)/g,(m,tag,txt)=>tag?tag:txt.replace(re,"<mark>$1</mark>"));
+}
+const thinkName=k=>CCC[k]||TEP[k];
+
+function stdRow(s){
+  const doTags=s.do.length?s.do.map(k=>`<button class="tag${state.do.has(k)?" on":""}" data-dim="do" data-k="${k}">${hl(SEP[k])}</button>`).join(""):`<span class="none">none listed</span>`;
+  const thTags=s.think.length?s.think.map(k=>`<button class="tag${state.think.has(k)?" on":""}" data-dim="think" data-k="${k}">${hl(thinkName(k))}</button>`).join(""):`<span class="none">none listed</span>`;
+  return `<div class="std" id="${s.code}">
+    <div class="code">${hl(s.code)}<span class="grade">${GLABEL(s.grade)}</span></div>
+    <div class="body">
+      <p class="pe">${s.ets?'<span class="ets" title="Engineering, Technology, and Applications of Science">ETS</span>':""}${hl(s.text)}</p>
+      <div class="dims3">
+        <div class="drow know"><span class="dlab"><a href="#g-dci" data-gl="dci">Know</a></span><div class="tags"><button class="tag${state.strand===s.sk?" on":""}" data-dim="strand" data-k="${esc(s.sk)}">${hl(s.strand)}</button></div></div>
+        <div class="drow do"><span class="dlab"><a href="#g-sep" data-gl="sep">Do</a></span><div class="tags">${doTags}</div></div>
+        <div class="drow think"><span class="dlab"><a href="#g-${s.disc==="5"?"tep":"ccc"}" data-gl="${s.disc==="5"?"tep":"ccc"}">Think</a></span><div class="tags">${thTags}</div></div>
+      </div>
+    </div>
+    <div class="acts">
+      <button class="copy" data-copy="${s.code}" aria-label="Copy ${s.code} and text">Copy</button>
+      ${PDF[s.code]?`<a class="copy pdf" href="https://files5.pdesas.org/${PDF[s.code]}/Download.ashx?hash=2.2" target="_blank" rel="noopener" aria-label="Open the ${s.code} Foundation Box PDF from PDE">PDF</a>`:""}
+    </div>
+  </div>`;
+}
+function renderList(list){
+  let html="";
+  ["1","2","3","4","5"].forEach(d=>{
+    const inD=list.filter(s=>s.disc===d); if(!inD.length) return;
+    html+=`<section class="disc"><h2><span class="num">3.${d}</span>${DISC[d]}</h2>`;
+    STRANDS.filter(st=>st.disc===d).forEach(st=>{
+      const rows=inD.filter(s=>s.sk===st.key).sort((a,b)=>GORDER[a.grade]-GORDER[b.grade]||lkey(a.letter)-lkey(b.letter));
+      if(rows.length) html+=`<h3 class="strand">${hl(st.name)}</h3>`+rows.map(stdRow).join("");
+    });
+    html+="</section>";
+  });
+  return html;
+}
+function renderProg(list){
+  let html="";
+  ["1","2","3","4","5"].forEach(d=>{
+    const inD=list.filter(s=>s.disc===d); if(!inD.length) return;
+    const cols=(d==="4"||d==="5")?BAND_COLS:SCI_COLS;
+    html+=`<section class="disc"><h2><span class="num">3.${d}</span>${DISC[d]}</h2><div class="prog-wrap"><table class="prog"><thead><tr><th class="sn">Strand (Know)</th>${cols.map(c=>`<th>${c.replace("-","–")}</th>`).join("")}</tr></thead><tbody>`;
+    STRANDS.filter(st=>st.disc===d).forEach(st=>{
+      const rows=inD.filter(s=>s.sk===st.key); if(!rows.length) return;
+      html+=`<tr><th class="sn" scope="row">${hl(st.name)}</th>`+cols.map(c=>{
+        const cell=rows.filter(s=>s.grade===c).sort((a,b)=>lkey(a.letter)-lkey(b.letter));
+        if(!cell.length) return `<td class="blank" aria-label="none"></td>`;
+        return `<td>${cell.map(s=>`<div class="cell-std"><span class="code">${hl(s.code)}${s.ets?' <span class="ets">ETS</span>':""}</span><span>${hl(s.text)}</span><span class="mini">${s.do.map(k=>`<span class="d">${SEP[k]}</span>`).join("")}${s.think.map(k=>`<span class="t">${thinkName(k)}</span>`).join("")}</span></div>`).join("")}</td>`;
+      }).join("")+`</tr>`;
+    });
+    html+="</tbody></table></div></section>";
+  });
+  return html;
+}
+
+// filter chips with live counts
+function mkChips(el,entries,dim,color){
+  entries.forEach(([k,label])=>{
+    const b=document.createElement("button"); b.className="chip"; b.dataset.dim=dim; b.dataset.k=k; b.setAttribute("aria-pressed","false");
+    b.innerHTML=`${label}<span class="n"></span>`; el.appendChild(b);
+  });
+}
+mkChips(document.getElementById("f-know"),Object.entries(DISC).map(([k,v])=>[k,"3."+k+" "+v]),"disc");
+mkChips(document.getElementById("f-do"),Object.entries(SEP),"do");
+mkChips(document.getElementById("f-ccc"),Object.entries(CCC),"think");
+mkChips(document.getElementById("f-tep"),Object.entries(TEP),"think");
+const fg=document.getElementById("f-grade");
+GRADES.forEach(g=>{const b=document.createElement("button");b.className="chip";b.dataset.dim="grade";b.dataset.k=g;b.setAttribute("aria-pressed","false");b.textContent=g.replace("-","–");fg.appendChild(b);});
+
+function setOf(dim){return dim==="disc"?state.discs:dim==="do"?state.do:state.think;}
+function toggle(dim,k){
+  if(dim==="grade"){state.grade=state.grade===k?null:k;}
+  else if(dim==="strand"){state.strand=state.strand===k?null:k;}
+  else{const s=setOf(dim); s.has(k)?s.delete(k):s.add(k);}
+  render();
+}
+document.addEventListener("click",e=>{
+  const gl=e.target.closest("[data-gl]"); if(gl){e.preventDefault(); openGloss(gl.dataset.gl); return;}
+  const go=e.target.closest(".go"); if(go){showStandards(go.dataset.gdim,go.dataset.gk); return;}
+  const b=e.target.closest("[data-dim]"); if(b){toggle(b.dataset.dim,b.dataset.k); return;}
+  const c=e.target.closest(".copy"); if(c){
+    const s=STDS.find(x=>x.code===c.dataset.copy);
+    const txt=`${s.code} ${s.text}\nKnow: ${s.strand}\nDo: ${s.do.map(k=>SEP[k]).join("; ")||"none listed"}\nThink: ${s.think.map(thinkName).join("; ")||"none listed"}`;
+    const ok=()=>{c.textContent="Copied";c.classList.add("done");setTimeout(()=>{c.textContent="Copy";c.classList.remove("done");},1400);};
+    try{navigator.clipboard.writeText(txt).then(ok,()=>sel(c));}catch(err){sel(c);}
+  }
+});
+function sel(c){const t=c.closest(".std").querySelector(".body");const r=document.createRange();r.selectNodeContents(t);const s=getSelection();s.removeAllRanges();s.addRange(r);c.textContent="Selected";}
+
+function countFor(dim,k){return STDS.filter(s=>dim==="disc"?s.disc===k:s[dim].includes(k)).length;}
+function renderGloss(){
+  const tq=terms();
+  const match=g=>tq.every(w=>(g.term+" "+(g.abbr||"")+" "+g.def+" "+g.vs.join(" ")).toLowerCase().includes(w));
+  let html=`<p class="gl-intro">Key terms from the STEELS standards, Foundation Boxes, and Curriculum Frameworks. Each term is paired with the one it is most often confused with. Practices and concepts link straight to every standard that uses them.</p>`;
+  let shown=0;
+  GL_GROUPS.forEach(([g,title,sub,cls])=>{
+    const items=GLOSSARY.filter(x=>x.g===g&&match(x)); if(!items.length) return; shown+=items.length;
+    html+=`<section class="gl-group ${cls}"><h2>${cls?`<span class="pill">${title}</span>`:""}${cls?esc(sub):esc(title)}</h2><div class="gl-grid">`+items.map(x=>`
+      <article class="term" id="g-${x.id}">
+        <h3>${hl(x.term)}${x.abbr?`<span class="abbr">${hl(x.abbr)}</span>`:""}</h3>
+        <p>${hl(x.def)}</p>
+        <p class="vs"><b>${hl(x.vs[0])}</b> vs. <b>${hl(x.vs[1])}</b></p>
+        ${x.dim?`<button class="go" data-gdim="${x.dim}" data-gk="${x.k}">See ${countFor(x.dim,x.k)} standards</button>`:""}
+      </article>`).join("")+`</div></section>`;
+  });
+  return shown?html:`<div class="empty">No glossary terms match. Try fewer words.</div>`;
+}
+function openGloss(id){state.view="gloss";render();const el=document.getElementById("g-"+id);if(el){el.scrollIntoView({block:"center"});el.style.outline="2px solid var(--mark)";setTimeout(()=>el.style.outline="",1800);}}
+function showStandards(dim,k){
+  state.q="";document.getElementById("q").value="";
+  if(dim==="disc"){state.discs.clear();state.discs.add(k);}else{const s=setOf(dim);s.clear();s.add(k);}
+  state.view=lastStdView==="gloss"?"list":lastStdView;render();window.scrollTo({top:0});
+}
+function render(){
+  const list=STDS.filter(s=>passes(s));
+  const out=document.getElementById("out");
+  document.getElementById("reading").hidden=state.view!=="gloss";
+  if(state.view==="gloss"){ out.innerHTML=renderGloss(); }
+  else out.innerHTML=list.length?(state.view==="list"?renderList(list):renderProg(list)):`<div class="empty">No standards match. Try fewer words, or clear a filter.</div>`;
+  document.getElementById("count").textContent=state.view==="gloss"?`${GLOSSARY.length} glossary terms`:`${list.length} of ${STDS.length} standards`;
+  document.getElementById("v-list").setAttribute("aria-pressed",state.view==="list");
+  document.getElementById("v-prog").setAttribute("aria-pressed",state.view==="prog");
+  document.getElementById("v-gloss").setAttribute("aria-pressed",state.view==="gloss");
+  // chip states + counts (count = matches if you add this chip, given other filters)
+  document.querySelectorAll(".dims .chip").forEach(b=>{
+    const dim=b.dataset.dim,k=b.dataset.k; const on=setOf(dim).has(k);
+    b.setAttribute("aria-pressed",on);
+    const n=STDS.filter(s=>passes(s,dim)&&(dim==="disc"?s.disc===k:s[dim].includes(k))).length;
+    b.querySelector(".n").textContent=n;
+  });
+  fg.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k===state.grade));
+  document.getElementById("f-ets").setAttribute("aria-pressed",state.ets);
+  // active filter summary
+  const act=[];
+  if(state.strand){const st=STRANDS.find(x=>x.key===state.strand);act.push(["strand",state.strand,"Know: "+st.name,"var(--know)"]);}
+  state.do.forEach(k=>act.push(["do",k,"Do: "+SEP[k],"var(--do)"]));
+  state.think.forEach(k=>act.push(["think",k,"Think: "+thinkName(k),"var(--think)"]));
+  document.getElementById("active").innerHTML=act.map(([d,k,l,c])=>`<button class="chip" aria-pressed="true" style="--c:${c}" data-dim="${d}" data-k="${esc(k)}" title="Remove">${esc(l)} ×</button>`).join("");
+  const any=state.q||state.discs.size||state.strand||state.do.size||state.think.size||state.grade||state.ets;
+  document.getElementById("reset").hidden=!any;
+}
+document.getElementById("f-ets").addEventListener("click",()=>{state.ets=!state.ets;render();});
+let tmr; document.getElementById("q").addEventListener("input",e=>{clearTimeout(tmr);tmr=setTimeout(()=>{state.q=e.target.value.trim();render();},120);});
+function setView(v){state.view=v;lastStdView=v;try{localStorage.setItem("steels-view",v);}catch(e){}render();}
+document.getElementById("v-list").addEventListener("click",()=>setView("list"));
+document.getElementById("v-prog").addEventListener("click",()=>setView("prog"));
+document.getElementById("v-gloss").addEventListener("click",()=>{state.view="gloss";render();});
+document.getElementById("reset").addEventListener("click",()=>{state.q="";state.discs.clear();state.strand=null;state.do.clear();state.think.clear();state.grade=null;state.ets=false;document.getElementById("q").value="";render();});
+
+document.getElementById("copy-email").addEventListener("click",e=>{const b=e.currentTarget;const em="amandajeane@codejoy.org";
+  const done=()=>{b.textContent="Copied";b.classList.add("done");setTimeout(()=>{b.textContent="Copy address";b.classList.remove("done");},1400);};
+  const fallback=()=>{const r=document.createRange();r.selectNodeContents(document.querySelector(".foot-notes .email"));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected";};
+  try{navigator.clipboard.writeText(em).then(done,fallback);}catch(err){fallback();}});
+render();
+const h=decodeURIComponent(location.hash.slice(1));
+if(h==="glossary"){state.view="gloss";render();}
+else if(h.startsWith("g-")){openGloss(h.slice(2));}
+if(h&&STDS.find(s=>s.code===h)){ if(state.view!=="list"){state.view="list";render();} const el=document.getElementById(h); if(el){el.scrollIntoView({block:"center"});el.style.background="color-mix(in srgb, var(--mark) 40%, transparent)";} }
+</script>

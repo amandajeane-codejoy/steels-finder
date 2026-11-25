@@ -1,0 +1,421 @@
+
+## Structure and Function
+3.1.1.A|Use materials to design a solution to a human problem by mimicking how plants and/or animals use their external parts to help them survive, grow, and meet their needs.
+3.1.4.A|Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction.
+3.1.6-8.A|Conduct an investigation to provide evidence that living things are made of cells, either one cell or many different numbers and types of cells.
+3.1.6-8.B|Develop and use a model to describe the function of a cell as a whole and the ways that parts of cells contribute to the function.
+3.1.6-8.C|Use arguments supported by evidence for how the body is a system of interacting subsystems composed of groups of cells.
+3.1.9-12.A|Construct an explanation based on evidence for how the structure of DNA determines the structure of proteins which carry out the essential functions of life through systems of specialized cells.
+3.1.9-12.B|Develop and use a model to illustrate the hierarchical organization of interacting systems that provide specific functions within multicellular organisms.
+3.1.9-12.C|Plan and conduct an investigation to provide evidence that feedback mechanisms maintain homeostasis.
+## Growth and Development of Organisms
+3.1.1.B|Read texts and use media to determine patterns in behavior of parents and offspring that help offspring survive.
+3.1.3.A|Develop models to describe that organisms have unique and diverse life cycles but all have in common birth, growth, reproduction, and death.
+3.1.6-8.D|Use arguments based on empirical evidence and scientific reasoning to support an explanation for how characteristic animal behaviors and specialized plant structures affect the probability of successful reproduction of animals and plants, respectively.
+3.1.6-8.E|Construct a scientific explanation based on evidence for how environmental and genetic factors influence the growth of organisms.
+3.1.9-12.D|Use a model to illustrate the role of cellular division (mitosis) and differentiation in producing and maintaining complex organisms.
+## Organization for Matter and Energy Flow in Organisms
+3.1.K.A|Use observations to describe patterns of what plants and animals (including humans) need to survive.
+3.1.5.A|Support an argument that plants get the materials they need for growth chiefly from air and water.
+3.1.6-8.F|Construct a scientific explanation based on evidence for the role of photosynthesis in the cycling of matter and flow of energy into and out of organisms.
+3.1.6-8.G|Develop a model to describe how food is rearranged through chemical reactions forming new molecules that support growth and/or release energy as this matter moves through an organism.
+3.1.9-12.E|Use a model to illustrate how photosynthesis transforms light energy into stored chemical energy.
+3.1.9-12.F|Construct and revise an explanation based on evidence for how carbon, hydrogen, and oxygen from sugar molecules may combine with other elements to form amino acids and/or other large carbon-based molecules.
+3.1.9-12.G|Use a model to illustrate that cellular respiration is a chemical process whereby the bonds of food molecules and oxygen molecules are broken and the bonds in new compounds are formed resulting in a net transfer of energy.
+## Information Processing
+3.1.4.B|Use a model to describe that animals receive different types of information through their senses, process the information in their brain, and respond to the information in different ways.
+3.1.6-8.H|Gather and synthesize information about how sensory receptors respond to stimuli by sending messages to the brain for immediate behavior or storage as memories.
+## Interdependent Relationships in Ecosystems
+3.1.2.A|Plan and conduct an investigation to determine if plants need sunlight and water to grow.
+3.1.2.B|Develop a simple model that mimics the function of an animal in dispersing seeds or pollinating plants.
+3.1.5.B|Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment.
+3.1.6-8.I|Analyze and interpret data to provide evidence for the effects of resource availability on organisms and populations of organisms in an ecosystem.
+3.1.6-8.J|Construct an explanation that predicts patterns of interactions among organisms across multiple ecosystems.
+3.1.9-12.H|Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem.
+3.1.9-12.I|Use mathematical and/or computational representations to support explanations of factors that affect carrying capacity of ecosystems at different scales.
+## Cycles of Matter and Energy Transfer in Ecosystems
+3.1.6-8.K|Develop a model to describe the cycling of matter and flow of energy among living and nonliving parts of an ecosystem.
+3.1.9-12.J|Construct and revise an explanation based on evidence for the cycling of matter and flow of energy in aerobic and anaerobic conditions.
+3.1.9-12.K|Develop a model to illustrate the role of photosynthesis and cellular respiration in the cycling of carbon among the biosphere, atmosphere, hydrosphere, and geosphere.
+3.1.9-12.L|Use mathematical representations to support and revise explanations based on evidence about factors affecting biodiversity and populations in ecosystems of different scales.
+## Ecosystem Dynamics, Functioning, and Resilience
+3.1.6-8.L|Construct an argument supported by empirical evidence that changes to physical or biological components of an ecosystem affect populations.
+3.1.9-12.M|Evaluate the claims, evidence, and reasoning that the complex interactions in ecosystems maintain relatively consistent numbers and types of organisms in stable conditions, but changing conditions may result in a new ecosystem.
+3.1.9-12.N|Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment and biodiversity.
+## Social Interactions and Group Behavior
+3.1.3.B|Construct an argument that some animals form groups that help members survive.
+3.1.9-12.O|Evaluate the evidence for the role of group behavior on individual and species' chances to survive and reproduce.
+## Inheritance of Traits
+3.1.1.C|Make observations to construct an evidence-based account that young plants and animals are like, but not exactly like, their parents.
+3.1.3.C|Analyze and interpret data to provide evidence that plants and animals have traits inherited from parents and that variation of these traits exists in a group of similar organisms.
+3.1.6-8.M|Develop and use a model to describe why structural changes to genes (mutations) located on chromosomes may affect proteins and may result in harmful, beneficial, or neutral effects to the structure and function of the organism.
+3.1.9-12.P|Ask questions to clarify relationships about the role of DNA and chromosomes in coding the instructions for characteristic traits passed from parents to offspring.
+## Variation of Traits
+3.1.3.D|Use evidence to support the explanation that traits can be influenced by the environment.
+3.1.6-8.N|Develop and use a model to describe why asexual reproduction results in offspring with identical genetic information and sexual reproduction results in offspring with genetic variation.
+3.1.9-12.Q|Make and defend a claim based on evidence that inheritable genetic variations may result from (1) new genetic combinations through meiosis, (2) viable errors occurring during replication, and/or (3) mutations caused by environmental factors.
+3.1.9-12.R|Apply concepts of statistics and probability to explain the variation and distribution of expressed traits in a population.
+## Evidence of Common Ancestry and Diversity
+3.1.3.E|Analyze and interpret data from fossils to provide evidence of the organisms and the environments in which they lived long ago.
+3.1.6-8.O|Analyze and interpret data for patterns in the fossil record that document the existence, diversity, extinction, and change of life forms throughout the history of life on Earth under the assumption that natural laws operate today as in the past.
+3.1.6-8.P|Apply scientific ideas to construct an explanation for anatomical similarities and differences among modern organisms and between modern and fossil organisms to infer evolutionary relationships.
+3.1.6-8.Q|Analyze displays of pictorial data to compare patterns of similarities in anatomical structures across multiple species to identify relationships not evident in the fully formed anatomy.
+3.1.9-12.S|Communicate scientific information that common ancestry and biological evolution are supported by multiple lines of empirical evidence.
+## Natural Selection
+3.1.3.F|Use evidence to construct an explanation for how the variations in characteristics among individuals of the same species may provide advantages in surviving, finding mates, and reproducing.
+3.1.6-8.R|Gather and synthesize information about the technologies that have changed the way humans influence the inheritance of desired traits in organisms.
+3.1.6-8.S|Construct an explanation based on evidence that describes how genetic variations of traits in a population increase some individuals' probability of surviving and reproducing in a specific environment.
+3.1.9-12.T|Construct an explanation based on evidence that the process of evolution primarily results from four factors: (1) the potential for a species to increase in number, (2) the heritable genetic variation of individuals in a species due to mutation and sexual reproduction, (3) competition for limited resources, and (4) the proliferation of those organisms that are better able to survive and reproduce in the environment.
+3.1.9-12.U|Apply concepts of statistics and probability to support explanations that organisms with an advantageous heritable trait tend to increase in proportion to organisms lacking this trait.
+## Adaptation
+3.1.3.G|Construct an argument with evidence that in a particular habitat some organisms can survive well, some survive less well, and some cannot survive at all.
+3.1.6-8.T|Use mathematical representations to support explanations of how natural selection may lead to increases and decreases of specific traits in populations over time.
+3.1.9-12.V|Create or revise a simulation to test a solution to mitigate the adverse impacts of human activity on biodiversity.
+3.1.9-12.W|Construct an explanation based on evidence for how natural selection leads to adaptation of populations.
+3.1.9-12.X|Evaluate the evidence supporting claims that changes in environmental conditions may result in (1) increases in the number of individuals of some species, (2) the emergence of new species over time, and (3) the extinction of other species.
+## Biodiversity and Humans
+3.1.2.C|Make observations of plants and animals to compare the diversity of life in different habitats.
+3.1.3.H|Make a claim supported by evidence about the merit of a solution to a problem caused when the environment changes and the types of plants and animals that live there may change.
+3.1.6-8.U|Evaluate competing design solutions for maintaining biodiversity and ecosystem services.
+## Structure and Properties of Matter
+3.2.2.A|Plan and conduct an investigation to describe and classify different kinds of materials by their observable properties.
+3.2.2.B|Analyze data obtained from testing different materials to determine which materials have the properties that are best suited for an intended purpose.
+3.2.2.C|Make observations to construct an evidence-based account of how an object made of a small set of pieces can be disassembled and made into a new object.
+3.2.5.A|Develop a model to describe that matter is made of particles too small to be seen.
+3.2.5.B|Make and communicate observations and measurements to identify materials based on their properties.
+3.2.5.C|Interpret and analyze data to make decisions about how to utilize materials based on their properties.
+3.2.6-8.A|Develop models to describe the atomic composition of simple molecules and extended structures.
+3.2.6-8.B|Develop a model that predicts and describes changes in the particle motion, temperature, and state of a pure substance when thermal energy is added or removed.
+3.2.9-12.A|Use the periodic table as a model to predict the relative properties of elements based on the patterns of electrons in the outermost energy level of atoms.
+3.2.9-12.B|Plan and conduct an investigation to gather evidence to compare the structure of substances at the bulk scale to infer the strength of electrical forces between particles.
+3.2.9-12.C|Construct and revise an explanation for the outcome of a simple chemical reaction based on the outermost electron states of atoms, trends in the periodic table, and knowledge of the patterns of chemical properties.
+3.2.9-12.D|Develop a model to illustrate that the release or absorption of energy from a chemical reaction system depends upon the changes in total bond energy.
+## Chemical Reactions
+3.2.2.D|Construct an argument with evidence that some changes caused by heating or cooling can be reversed and some cannot.
+3.2.5.D|Measure and graph quantities to provide evidence that regardless of the type of change that occurs when heating, cooling, or mixing substances, the total weight of matter is conserved.
+3.2.5.E|Conduct an investigation to determine whether the mixing of two or more substances results in new substances.
+3.2.6-8.C|Gather and make sense of information to describe how synthetic materials come from natural resources and impact society.
+3.2.6-8.D|Analyze and interpret data on the properties of substances before and after the substances interact to determine if a chemical reaction has occurred.
+3.2.6-8.E|Develop and use a model to describe how the total number of atoms does not change in a chemical reaction and thus mass is conserved.
+3.2.6-8.F|Undertake a design project to construct, test, and modify a device that either releases or absorbs thermal energy by chemical processes.
+3.2.9-12.E|Apply scientific principles and evidence to provide an explanation about the effects of changing the temperature or concentration of the reacting particles on the rate at which a reaction occurs.
+3.2.9-12.F|Refine the design of a chemical system by specifying a change in conditions that would produce increased amounts of products at equilibrium.
+3.2.9-12.G|Use mathematical representations to support the claim that atoms, and therefore mass, are conserved during a chemical reaction.
+## Nuclear Processes
+3.2.9-12.H|Develop models to illustrate the changes in the composition of the nucleus of the atom and the energy released during the processes of fission, fusion, and radioactive decay.
+## Forces and Motion
+3.2.K.A|Analyze data to determine if a design solution works as intended to change the speed or direction of an object with a push or a pull.
+3.2.3.A|Make and communicate observations and/or measurements of an object's motion to provide evidence that a pattern can be used to predict future motion.
+3.2.3.B|Plan and conduct an investigation to provide evidence of the effects of balanced and unbalanced forces on the motion of an object.
+3.2.6-8.G|Apply Newton's Third Law to design a solution to a problem involving the motion of two colliding objects.
+3.2.6-8.H|Plan an investigation to provide evidence that the change in an object's motion depends on the sum of the forces on the object and the mass of the object.
+3.2.9-12.I|Analyze data to support the claim that Newton's second law of motion describes the mathematical relationship among the net force on a macroscopic object, its mass, and its acceleration.
+3.2.9-12.J|Use mathematical representations to support the claim that the total momentum of a system of objects is conserved when there is no net force on the system.
+3.2.9-12.K|Apply scientific and engineering ideas to design, evaluate and refine a device that minimizes the force on a macroscopic object during a collision.
+## Types of Interactions
+3.2.K.B|Plan and conduct an investigation to compare the effects of different strengths or different directions of pushes and pulls on the motion of an object.
+3.2.3.C|Ask questions to determine cause and effect relationships of electric or magnetic interactions between two objects not in contact with each other.
+3.2.3.D|Define a simple design problem that can be solved by applying scientific ideas about magnets.
+3.2.5.F|Support an argument that the gravitational force exerted by Earth on objects is directed down.
+3.2.6-8.I|Ask questions about data to determine the factors that affect the strength of electric and magnetic forces.
+3.2.6-8.J|Construct and present arguments using evidence to support the claim that gravitational interactions are attractive and depend on the masses of interacting objects.
+3.2.6-8.K|Conduct an investigation and evaluate the experimental design to provide evidence that fields exist between objects exerting forces on each other even though the objects are not in contact.
+3.2.9-12.L|Use mathematical representations of Newton's Law of Gravitation and Coulomb's Law to describe and predict the gravitational and electrostatic forces between objects.
+3.2.9-12.M|Plan and conduct an investigation to provide evidence that an electric current can produce a magnetic field and that a changing magnetic field can produce an electric current.
+3.2.9-12.N|Communicate scientific and technical information about why the molecular-level structure is important in the functioning of designed materials.
+## Definitions of Energy
+3.2.4.A|Use evidence to construct an explanation relating the speed of an object to the energy of that object.
+3.2.6-8.L|Construct and interpret graphical displays of data to describe the relationships of kinetic energy to the mass and speed of an object.
+3.2.9-12.O|Create a computational model to calculate the change in the energy of one component in a system when the change in energy of the other component(s) and energy flows in and out of the system are known.
+3.2.9-12.P|Develop and use models to illustrate that energy at the macroscopic scale can be accounted for as a combination of energy associated with the motions of particles (objects) and energy associated with the relative positions of particles (objects).
+3.2.9-12.Q|Design, build, and refine a device that works within given constraints to convert one form of energy into another form of energy.
+## Conservation of Energy and Energy Transfer
+3.2.K.C|Make observations to determine the effect of sunlight on Earth's surface.
+3.2.K.D|Use tools and materials to design and build a structure that will reduce the warming effect of sunlight on an area.
+3.2.4.B|Make and communicate observations to provide evidence that energy can be transferred from place to place by sound, light, heat, and electric currents.
+3.2.6-8.M|Apply scientific principles to design, construct, and test a device that either minimizes or maximizes thermal energy transfer.
+3.2.6-8.N|Plan an investigation to determine the relationships among the energy transferred, the type of matter, the mass, and the change in the average kinetic energy of the particles as measured by the temperature of the sample.
+3.2.6-8.O|Construct, use, and present arguments to support the claim that when the kinetic energy of an object changes, energy is transferred to or from the object.
+3.2.9-12.R|Plan and conduct an investigation to provide evidence that the transfer of thermal energy when two components of different temperature are combined within a closed system results in a more uniform energy distribution among the components in the system (second law of thermodynamics).
+## Relationship Between Energy and Forces
+3.2.4.C|Ask questions and predict outcomes about the changes in energy that occur when objects collide.
+3.2.6-8.P|Develop a model to describe that when the arrangement of objects interacting at a distance changes, different amounts of potential energy are stored in the system.
+3.2.9-12.S|Develop and use a model of two objects interacting through electric or magnetic fields to illustrate the forces between objects and the changes in energy of the objects due to the interaction.
+## Energy in Chemical Processes and Everyday Life
+3.2.4.D|Apply scientific ideas to design, test, and refine a device that converts energy from one form to another.
+3.2.5.G|Use models to describe that energy in animals' food (used for body repair, growth, motion, and to maintain body warmth) was once energy from the sun.
+## Wave Properties
+3.2.1.A|Plan and conduct investigations to provide evidence that vibrating materials can make sound and that sound can make materials vibrate.
+3.2.4.E|Develop a model of waves to describe patterns in terms of amplitude and wavelength and that waves can cause objects to move.
+3.2.6-8.Q|Use mathematical representations to describe a simple model for waves that includes how the amplitude of a wave is related to the energy in a wave.
+3.2.9-12.T|Use mathematical representations to support a claim regarding relationships among the frequency, wavelength, and speed of waves traveling in various media.
+3.2.9-12.U|Evaluate questions about the advantages of using digital transmission and storage of information.
+3.2.9-12.V|Evaluate the claims, evidence, and reasoning behind the idea that electromagnetic radiation can be described either by a wave model or a particle model and that for some situations one model is more useful than the other.
+## Electromagnetic Radiation
+3.2.1.B|Make observations to construct an evidence-based account that objects can be seen only when illuminated.
+3.2.1.C|Plan and conduct an investigation to determine the effect of placing objects made with different materials in the path of a beam of light.
+3.2.4.F|Develop a model to describe that light reflecting from objects and entering the eye allows objects to be seen.
+3.2.6-8.R|Develop and use a model to describe how waves are reflected, absorbed, or transmitted through various materials.
+3.2.9-12.W|Evaluate the validity and reliability of claims in published materials of the effects that different frequencies of electromagnetic radiation have when absorbed by matter.
+## Information Technologies and Instrumentation
+3.2.1.D|Use tools and materials to design and build a device that uses light or sound to solve the problem of communicating over a distance.
+3.2.4.G|Generate and compare multiple solutions that use patterns to transfer information.
+3.2.6-8.S|Integrate qualitative scientific and technical information to support the claim that digitized signals are a more reliable way to encode and transmit information than analog signals.
+3.2.9-12.X|Communicate technical information about how some technological devices use the principles of wave behavior and wave interactions with matter to transmit and capture information and energy.
+## The Universe and Its Stars
+3.3.1.A|Use observations of the sun, moon, and stars to describe patterns that can be predicted.
+3.3.5.A|Support an argument that differences in the apparent brightness of the sun compared to other stars is due to their relative distances from Earth.
+3.3.6-8.A|Develop and use a model of the Earth-sun-moon system to describe the cyclic patterns of lunar phases, eclipses of the sun and moon, and seasons.
+3.3.6-8.B|Develop and use a model to describe the role of gravity in the motion within galaxies and the solar system.
+3.3.9-12.A|Develop a model based on evidence to illustrate the life span of the sun and the role of nuclear fusion in the sun's core to release energy in the form of radiation.
+3.3.9-12.B|Construct an explanation of the Big Bang theory based on astronomical evidence of light spectra, the motion of distant galaxies, and the composition of matter in the universe.
+3.3.9-12.C|Communicate scientific ideas about the way stars, over their life cycle, produce elements.
+## Earth and the Solar System
+3.3.1.B|Make observations at different times of year to relate the amount of daylight to the time of year.
+3.3.5.B|Represent data in graphical displays to reveal patterns of daily changes in length and direction of shadows, day and night, and the seasonal appearance of some stars in the night sky.
+3.3.6-8.C|Analyze and interpret data to determine scale properties of objects in the solar system.
+3.3.9-12.D|Use mathematical or computational representations to predict the motion of orbiting objects in the solar system.
+3.3.9-12.E|Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate.
+## The History of Planet Earth
+3.3.2.A|Use information from several sources to provide evidence that Earth events can occur quickly or slowly.
+3.3.4.A|Identify evidence from patterns in rock formations and fossils in rock layers to support an explanation for changes in a landscape over time.
+3.3.6-8.D|Construct a scientific explanation based on evidence from rock strata for how the geologic time scale is used to organize Earth's 4.6-billion-year-old history.
+3.3.9-12.F|Evaluate evidence of the past and current movements of continental and oceanic crust and the theory of plate tectonics to explain the ages of crustal rocks.
+3.3.9-12.G|Apply scientific reasoning and evidence from ancient Earth materials, meteorites, and other planetary surfaces to construct an account of Earth's formation and early history.
+## Earth Materials and Systems
+3.3.2.B|Compare multiple solutions designed to slow or prevent wind or water from changing the shape of the land.
+3.3.4.B|Make observations and/or measurements to provide evidence of the effects of weathering or the rate of erosion by water, ice, wind, or vegetation.
+3.3.5.C|Develop a model using an example to describe ways the geosphere, biosphere, hydrosphere, and/or atmosphere interact.
+3.3.6-8.E|Construct an explanation based on evidence for how geoscience processes have changed Earth's surface at varying time and spatial scales.
+3.3.6-8.F|Develop a model to describe the cycling of Earth's materials and the flow of energy that drives this process.
+3.3.9-12.H|Analyze geoscience data to make the claim that one change to Earth's surface can create feedback that causes changes to other Earth systems.
+3.3.9-12.I|Develop a model based on evidence of Earth's interior to describe the cycling of matter by thermal convection.
+## Plate Tectonics and Large-Scale System Interactions
+3.3.2.C|Develop a model to represent the shapes and kinds of land and bodies of water in an area.
+3.3.4.C|Analyze and interpret data from maps to describe patterns of Earth's features.
+3.3.6-8.G|Analyze and interpret data on the distribution of fossils and rocks, continental shapes, and seafloor structures to provide evidence of past plate motions.
+3.3.9-12.J|Develop a model to illustrate how Earth's internal and surface processes operate at different spatial and temporal scales to form continental and ocean-floor features.
+## The Roles of Water in Earth's Surface Processes
+3.3.2.D|Obtain information to identify where water is found on Earth and that it can be solid or liquid.
+3.3.5.D|Describe and graph the amounts of salt water and fresh water in various reservoirs to provide evidence about the distribution of water on Earth.
+3.3.6-8.H|Develop a model to describe the cycling of water through Earth's systems driven by energy from the sun and the force of gravity.
+3.3.6-8.I|Develop and use a model to describe how unequal heating and rotation of the Earth cause patterns of atmospheric and oceanic circulation that determine regional climates.
+3.3.9-12.K|Plan and conduct an investigation of the properties of water and its effects on Earth materials and surface processes.
+## Weather and Climate
+3.3.K.A|Use and share observations of local weather conditions to describe patterns over time.
+3.3.3.A|Represent data in tables and graphical displays to describe typical weather conditions expected during a particular season.
+3.3.3.B|Obtain and combine information to describe climates in different regions of the world.
+3.3.6-8.J|Collect data to provide evidence for how the motion and complex interactions of air masses result in changes in weather conditions.
+3.3.6-8.O|Ask questions to clarify evidence of the factors that have caused the rise in global temperatures over the past century.
+3.3.9-12.L|Develop a quantitative model to describe the cycling of carbon among the hydrosphere, atmosphere, geosphere, and biosphere.
+3.3.9-12.M|Use a computational representation to illustrate the relationships among Earth systems and how those relationships are being modified due to human activity.
+3.3.9-12.S|Analyze geoscience data and the results from global climate models to make an evidence-based forecast of the current rate of global or regional climate change and associated future impacts to Earth systems.
+## Biogeology
+3.3.K.B|Construct an argument supported by evidence for how plants and animals (including humans) can change the environment to meet their needs.
+3.3.9-12.N|Construct an argument based on evidence about the simultaneous coevolution of Earth's systems and life on Earth.
+## Natural Resources
+3.3.K.C|Use a model to represent the relationship between the needs of different plants or animals (including humans) and the places they live.
+3.3.4.D|Obtain and combine information to describe that energy and fuels are derived from natural resources and their uses affect the environment.
+3.3.6-8.K|Construct a scientific explanation based on evidence for how the uneven distributions of Earth's mineral, energy, and groundwater resources are the result of past and current geoscience processes.
+3.3.9-12.O|Construct an explanation based on evidence for how the availability of natural resources, occurrence of natural hazards, and changes in climate have influenced human activity.
+3.3.9-12.P|Evaluate competing design solutions for developing, managing, and utilizing energy and mineral resources based on cost-benefit ratios.
+## Natural Hazards
+3.3.K.D|Ask questions to obtain information about the purpose of weather forecasting to prepare for, and respond to, severe weather.
+3.3.3.C|Make a claim supported by evidence about the merit of a design solution that reduces the impacts of a weather-related hazard.
+3.3.4.E|Generate and compare multiple solutions to reduce the impacts of natural Earth processes on humans.
+3.3.6-8.L|Analyze and interpret data on natural hazards to forecast future catastrophic events and inform the development of technologies to mitigate their effects.
+## Human Impact on Earth Systems
+3.3.K.E|Communicate solutions that will reduce the impact of humans on the land, water, air, and/or other living things in the local environment.
+3.3.5.E|Obtain and combine information about ways individual communities use science ideas to protect the Earth's resources and environment.
+3.3.5.F|Generate and design possible solutions to a current environmental issue, threat, or concern.
+3.3.6-8.M|Apply scientific principles to design a method for monitoring and minimizing human impact on the environment.
+3.3.6-8.N|Construct an argument supported by evidence for how increases in human population and per capita consumption of natural resources impact Earth's systems.
+3.3.9-12.Q|Create a computational simulation to illustrate the relationships among management of natural resources, the sustainability of human populations, and biodiversity.
+3.3.9-12.R|Evaluate or refine a technological solution that reduces the impact of human activities on natural systems.
+## Agricultural Systems
+3.4.K-2.A|Categorize ways people harvest, redistribute, and use natural resources.
+3.4.3-5.A|Analyze how living organisms, including humans, affect the environment in which they live, and how their environment affects them.
+3.4.6-8.A|Develop a model to describe how agricultural and food systems function, including the sustainable use of natural resources and the production, processing, and management of food, fiber, and energy.
+3.4.9-12.A|Analyze and interpret how issues, trends, technologies, and policies impact agricultural, food, and environmental systems and resources.
+## Environment and Society
+3.4.K-2.B|Examine how people from different cultures and communities, including one's own, interact and express their beliefs about nature.
+3.4.3-5.B|Make a claim about the environmental and social impacts of design solutions and civic actions, including their own actions.
+3.4.6-8.B|Analyze and interpret data about how different societies (economic and social systems) and cultures use and manage natural resources differently.
+3.4.9-12.B|Apply research and analytical skills to evaluate the conditions and motivations that lead to conflict, cooperation, and change among individuals, groups, and nations.
+## Watersheds and Wetlands
+3.4.3-5.C|Examine ways you influence your local environment and community by collecting and displaying data.
+3.4.6-8.C|Develop a model to describe how watersheds and wetlands function as systems, including the roles and functions they serve.
+3.4.9-12.C|Analyze and interpret how issues, trends, technologies, and policies impact watersheds and water resources.
+## Investigating Environmental Issues
+3.4.3-5.D|Develop a model to demonstrate how local environmental issues are connected to larger local environment and human systems.
+3.4.6-8.D|Gather, read, and synthesize information from multiple sources to investigate how Pennsylvania environmental issues affect Pennsylvania's human and natural systems.
+3.4.9-12.D|Apply research and analytical skills to systematically investigate environmental issues ranging from local issues to those that are regional or global in scope.
+## Environmental Experiences
+3.4.K-2.C|Explain ways that places differ in their physical characteristics, their meaning, and their value and/or importance.
+3.4.6-8.E|Collect, analyze, and interpret environmental data to describe a local environment.
+3.4.9-12.E|Plan and conduct an investigation utilizing environmental data about a local environmental issue.
+## Evaluating Solutions
+3.4.3-5.E|Construct an argument to support whether action is needed on a selected environmental issue and propose possible solutions.
+3.4.6-8.F|Obtain and communicate information on how integrated pest management could improve indoor and outdoor environments.
+3.4.9-12.F|Evaluate and communicate the effect of integrated pest management practices on indoor and outdoor environments.
+## Environmental Sustainability
+3.4.K-2.D|Plan and carry out an investigation to address an issue in the local environment and community.
+3.4.6-8.G|Obtain and communicate information to describe how best resource management practices and environmental laws are designed to achieve environmental sustainability.
+3.4.9-12.G|Analyze and evaluate how best resource management practices and environmental laws achieve sustainability of natural resources.
+## Environmental Stewardship
+3.4.3-5.F|Critique ways that people depend on and change the environment.
+3.4.6-8.H|Design a solution to an environmental issue in which individuals and societies can engage as stewards of the environment.
+3.4.9-12.H|Design and evaluate solutions in which individuals and societies can promote stewardship in environmental quality and community well-being.
+## Environmental Justice
+3.4.3-5.G|Investigate how perspectives over the use of resources and the development of technology have changed over time and resulted in conflict over the development of societies and nations.
+3.4.6-8.I|Construct an explanation that describes regional environmental conditions and their implications on environmental justice and social equity.
+3.4.9-12.I|Analyze and interpret data on a regional environmental condition and its implications on environmental justice and social equity.
+## Products & Systems · Impacts · Influence of Society
+3.5.K-2.A|Identify and use everyday symbols.
+3.5.K-2.B|Describe qualities of everyday products.
+3.5.K-2.C|Explain ways that technology helps with everyday tasks.
+3.5.K-2.D|Select ways to reduce, reuse, and recycle resources in daily life.
+3.5.K-2.E|Illustrate helpful and harmful effects of technology.
+3.5.K-2.F|Investigate the use of technologies in the home and community.
+3.5.K-2.G|Explain the tools and techniques that people use to help them do things.
+3.5.K-2.H|Explain the needs and wants of individuals and societies.
+3.5.K-2.I|Compare simple technologies to evaluate their impacts.
+3.5.K-2.J|Design new technologies that could improve their daily lives.
+3.5.K-2.K|Safely use tools to complete tasks.
+3.5.K-2.L|Explore how technologies are developed to meet individual and societal needs and wants.
+3.5.3-5.A|Use appropriate symbols, numbers, and words to communicate key ideas about technological products and systems.
+3.5.3-5.B|Examine information to assess the trade-offs to using a product or system.
+3.5.3-5.C|Follow directions to complete a technological task.
+3.5.3-5.D|Predict how certain aspects of their daily lives would be different without given technologies.
+3.5.3-5.E|Explain why responsible use of technology requires sustainable management of resources.
+3.5.3-5.F|Classify resources used to create technologies as either renewable or nonrenewable.
+3.5.3-5.G|Describe the helpful and harmful effects of technology.
+3.5.3-5.H|Determine factors that influence changes in a society's technological systems or infrastructure.
+3.5.3-5.I|Design solutions by safely using tools, materials, and skills.
+3.5.3-5.J|Explain how technologies are developed or adapted when individual or societal needs and wants change.
+3.5.3-5.K|Judge technologies to determine the best one to use to complete a given task or meet a need.
+3.5.3-5.L|Demonstrate how tools and machines extend human capabilities, such as holding, lifting, carrying, fastening, separating, and computing.
+3.5.6-8.A|Research information from various sources to use and maintain technological products or systems.
+3.5.6-8.B|Use instruments to gather data on the performance of everyday products.
+3.5.6-8.C|Hypothesize what alternative outcomes (individual, cultural, and/or environmental) might have resulted had a different technological solution been selected.
+3.5.6-8.D|Analyze how the creation and use of technologies consumes renewable, non-renewable, and inexhaustible resources; creates waste; and may contribute to environmental challenges.
+3.5.6-8.E|Consider the impacts of a proposed or existing technology and devise strategies for reducing, reusing, and recycling waste caused by its creation.
+3.5.6-8.F|Analyze examples of technologies that have changed the way people think, interact, live, and communicate.
+3.5.6-8.G|Analyze how an invention or innovation was influenced by the context and circumstances in which it is developed.
+3.5.6-8.H|Evaluate trade-offs based on various perspectives as part of a decision process that recognizes the need for careful compromises among competing factors.
+3.5.6-8.I|Examine the ways that technology can have both positive and negative effects at the same time.
+3.5.6-8.J|Use tools, materials, and machines to safely diagnose, adjust, and repair systems.
+3.5.6-8.K|Use devices to control technological systems.
+3.5.6-8.L|Design methods to gather data about technological systems.
+3.5.6-8.M|*Develop a model to generate data for iterative testing and modification of a proposed object, tool, or process such that an optimal design can be achieved.
+3.5.6-8.N|*Analyze data from tests to determine similarities and differences among several design solutions to identify the best characteristics of each that can be combined into a new solution to better meet the criteria for success.
+3.5.6-8.O|Interpret the accuracy of information collected.
+3.5.6-8.P|*Evaluate competing design solutions using a systematic process to determine how well they meet the criteria and constraints of the problem.
+3.5.9-12.A|Use various approaches to communicate processes and procedures for using, maintaining, and assessing technological products and systems.
+3.5.9-12.B|Critically assess and evaluate a technology that minimizes resource use and resulting waste to achieve a goal.
+3.5.9-12.C|Develop a solution to a technological problem that has the least negative environmental and social impact.
+3.5.9-12.D|Critique whether existing or proposed technologies use resources sustainably.
+3.5.9-12.E|Evaluate how technology and engineering advancements alter human health and capabilities.
+3.5.9-12.F|Evaluate a technological innovation that arose from a specific society's unique need or want.
+3.5.9-12.G|Evaluate a technological innovation that was met with societal resistance impacting its development.
+3.5.9-12.H|Evaluate ways that technology and engineering can impact individuals, society, and the environment.
+3.5.9-12.I|*Evaluate a solution to a complex real-world problem based on prioritized criteria and trade-offs that account for a range of constraints, including cost, safety, reliability, and aesthetics as well as possible social, cultural, and environmental impacts.
+3.5.9-12.J|Synthesize data and analyze trends to make decisions about technological products, systems, or processes.
+3.5.9-12.K|*Use a computer simulation to model the impact of proposed solutions to a complex real-world problem with numerous criteria and constraints on interactions within and between systems relevant to the problem.
+3.5.9-12.L|Interpret laws, regulations, policies, and other factors that impact the development and use of technology.
+3.5.9-12.M|Develop a device or system for the marketplace.
+## Design and Design Thinking
+3.5.K-2.M|Demonstrate essential skills of the engineering design process.
+3.5.K-2.N|Analyze how things work.
+3.5.K-2.O|Illustrate that there are different solutions to a design and that none are perfect.
+3.5.K-2.P|Discuss that all designs have different characteristics that can be described.
+3.5.K-2.Q|Apply skills necessary for making in design.
+3.5.K-2.R|Draw connections between technology and human experience.
+3.5.K-2.S|Apply design concepts, principles, and processes through play and exploration.
+3.5.K-2.T|Demonstrate that designs have requirements.
+3.5.K-2.U|Explain that design is a response to wants and needs.
+3.5.3-5.M|Demonstrate essential skills of the engineering design process.
+3.5.3-5.N|Identify why a product or system is not working properly.
+3.5.3-5.O|Describe requirements of designing or making a product or system.
+3.5.3-5.P|Evaluate the strengths and weaknesses of existing design solutions, including their own solutions.
+3.5.3-5.Q|Practice successful design skills.
+3.5.3-5.R|Apply tools, techniques, and materials in a safe manner as part of the design process.
+3.5.3-5.S|Illustrate that there are multiple approaches to design.
+3.5.3-5.T|Apply universal principles and elements of design.
+3.5.3-5.U|Evaluate designs based on criteria, constraints, and standards.
+3.5.3-5.V|Interpret how good design improves the human condition.
+3.5.6-8.Q|Apply a technology and engineering design thinking process.
+3.5.6-8.R|Develop innovative products and systems that solve problems and extend capabilities based on individual or collective needs and wants.
+3.5.6-8.S|Illustrate the benefits and opportunities associated with different approaches to design.
+3.5.6-8.T|Create solutions to problems by identifying and applying human factors in design.
+3.5.6-8.U|Evaluate and assess the strengths and weaknesses of various design solutions given established principles and elements of design.
+3.5.6-8.V|Refine design solutions to address criteria and constraints.
+3.5.6-8.W|*Define the criteria and constraints of a design problem with sufficient precision to ensure a successful solution, taking into account relevant scientific principles and potential impacts on people and the natural environment that may limit possible solutions.
+3.5.6-8.X|Defend decisions related to a design problem.
+3.5.9-12.N|Analyze and use relevant and appropriate design thinking processes to solve technological and engineering problems.
+3.5.9-12.O|Apply appropriate design thinking processes to diagnose, adjust, and repair systems to ensure precise, safe, and proper functionality.
+3.5.9-12.P|Apply a broad range of design skills to a design thinking process.
+3.5.9-12.Q|Implement and critique principles, elements, and factors of design.
+3.5.9-12.R|Use a design thinking process to design an appropriate technology for use in a different culture.
+3.5.9-12.S|Conduct research to inform intentional inventions and innovations that address specific needs and wants.
+3.5.9-12.T|*Analyze a major global challenge to specify qualitative and quantitative criteria and constraints for solutions that account for societal needs and wants.
+3.5.9-12.U|Evaluate and define the purpose of a design.
+3.5.9-12.V|Apply principles of human-centered design.
+3.5.9-12.W|Optimize a design by addressing desired qualities within criteria and constraints while considering trade-offs.
+3.5.9-12.X|Implement the best possible solution to a design using an explicit process.
+3.5.9-12.Y|*Design a solution to a complex real-world problem by breaking it down into smaller, more manageable problems that can be solved through engineering.
+3.5.9-12.Z|Recognize and explain how their community and the world around them informs technological development and engineering design.
+3.5.9-12.AA|Safely apply an appropriate range of making skills to a design thinking process.
+## Integration of Knowledge, Technologies, and Practices
+3.5.K-2.V|Explain that materials are selected for use because they possess desirable properties and characteristics.
+3.5.K-2.W|Apply concepts and skills from technology and engineering activities that reinforce concepts and skills across multiple areas.
+3.5.K-2.X|Develop a plan in order to complete a task.
+3.5.3-5.W|Describe the properties of different materials.
+3.5.3-5.X|Explain how various relationships can exist between technology and engineering and other content areas.
+3.5.3-5.Y|Identify the resources needed to get a technical job done, such as people, materials, capital, tools, machines, knowledge, energy, and time.
+3.5.3-5.Z|Create a new product that improves someone's life.
+3.5.6-8.Y|Compare, contrast, and identify overlap between the contributions of science, technology, engineering, and mathematics in the development of technological systems.
+3.5.6-8.Z|Analyze how different technological systems often interact with economic, environmental, and social systems.
+3.5.6-8.AA|Adapt and apply an existing product, system, or process to solve a problem in a different setting.
+3.5.6-8.BB|Demonstrate how knowledge gained from other content areas affects the development of technological products and systems.
+3.5.9-12.BB|Assess how similarities and differences among scientific, technological, engineering, and mathematical knowledge and skills contributed to the design of a product or system.
+3.5.9-12.CC|Analyze how technology transfer occurs when a user applies an existing innovation developed for one function for a different purpose.
+3.5.9-12.DD|Develop a plan that incorporates knowledge from science, mathematics, and other disciplines to design or improve a technological product or system.
+3.5.9-12.EE|Connect technological and engineering progress to the advancement of other areas of knowledge and vice versa.
+3.5.9-12.FF|Evaluate how technology enhances opportunities for new products and services through globalization.
+## Nature & Core Concepts · History of Technology
+3.5.K-2.Y|Discuss how the way people live and work has changed throughout history because of technology.
+3.5.K-2.Z|Illustrate how systems have parts or components that work together to accomplish a goal.
+3.5.K-2.AA|Demonstrate that creating can be done by anyone.
+3.5.K-2.BB|Compare the natural world and human-made world.
+3.5.K-2.CC|Discuss the roles of scientists, engineers, technologists, and others who work with technology.
+3.5.K-2.DD|Collaborate effectively as a member of a team.
+3.5.3-5.AA|Create representations of the tools people made, how they cultivated to provide food, made clothing, and built shelters to protect themselves.
+3.5.3-5.BB|Illustrate how, when parts of a system are missing, it may not work as planned.
+3.5.3-5.CC|Describe how a subsystem is a system that operates as a part of another larger system.
+3.5.3-5.DD|Demonstrate how simple technologies are often combined to form more complex systems.
+3.5.3-5.EE|Explain how solutions to problems are shaped by economic, political, and cultural forces.
+3.5.3-5.FF|Compare how things found in nature differ from things that are human-made, noting differences and similarities in how they are produced and used.
+3.5.3-5.GG|Describe the unique relationship between science and technology, and how the natural world can contribute to the human-made world to foster innovation.
+3.5.3-5.HH|Differentiate between the role of scientists, engineers, technologists, and others in creating and maintaining technological systems.
+3.5.6-8.CC|Consider historical factors that have contributed to the development of technologies and human progress.
+3.5.6-8.DD|Engage in a research and development process to simulate how inventions and innovations have evolved through systematic tests and refinements.
+3.5.6-8.EE|Differentiate between inputs, processes, outputs, and feedback in technological systems.
+3.5.6-8.FF|Demonstrate how systems thinking involves considering relationships between every part, as well as how the systems interact with the environment in which it is used.
+3.5.6-8.GG|Create an open-loop system that has no feedback path and requires human intervention.
+3.5.6-8.HH|Create a closed-loop system that has a feedback path and requires no human intervention.
+3.5.6-8.II|Predict outcomes of a future product or system at the beginning of the design process.
+3.5.6-8.JJ|Apply informed problem-solving strategies to the improvement of existing devices or processes or the development of new approaches.
+3.5.6-8.KK|Explain how technology and engineering are closely linked to creativity, which can result in both intended and unintended innovations.
+3.5.6-8.LL|Compare how different technologies involve different sets of processes.
+3.5.9-12.GG|Evaluate how technology and engineering have been powerful forces in reshaping the social, cultural, political, and economic landscapes throughout history.
+3.5.9-12.HH|Analyze how the Industrial Revolution resulted in the development of mass production, sophisticated transportation and communication systems, advanced construction practices, and improved education and leisure time.
+3.5.9-12.II|Investigate the widespread changes that have resulted from the Information Age, which has placed emphasis on the processing and exchange of information.
+3.5.9-12.JJ|Identify and explain how the evolution of civilization has been directly affected by, and has in turn affected, the development and use of tools, materials, and processes.
+3.5.9-12.KK|Relate how technological and engineering developments have been evolutionary, often the result of a series of refinements to basic inventions or technological knowledge.
+3.5.9-12.LL|Analyze the stability of a technological system and how it is influenced by all of the components in the system, especially those in the feedback loop.
+3.5.9-12.MM|Troubleshoot and improve a flawed system embedded within a larger technological, social, or environmental system.
+3.5.9-12.NN|Analyze the rate of technological and engineering development and predict future diffusion and adoption of new innovations and technologies.
+3.5.9-12.OO|Use project management tools, strategies, and processes in planning, organizing, and controlling work.
+3.5.9-12.PP|Demonstrate the use of conceptual, graphical, virtual, mathematical, and physical modeling to identify conflicting considerations before the entire system is developed and to aid in design decision making.
+3.5.9-12.QQ|Implement quality control as a planned process to ensure that a product, service, or system meets established criteria.
